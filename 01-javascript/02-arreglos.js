@@ -71,3 +71,28 @@ var arregloSiguientesNumeros = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 arregloTotal.splice(arregloTotal.length, 0, ...arregloSiguientesNumeros);
 
 console.log(arregloTotal);
+
+
+var vicente = {
+    nombre: "Vicente",
+    apellido: "Eguez",
+    sueldo: 1
+};
+var eguez = {
+    sueldo: 2.10
+};
+var adrian =  {
+    casado: false,
+    hijos: null,
+    mascota: {
+        nombre: "Cachetes"
+    },
+    sueldo: 3
+};
+
+var vicenteAdrianEguez = {
+    ...vicente,
+    ...adrian,
+    ...eguez
+};
+console.log(vicenteAdrianEguez);
