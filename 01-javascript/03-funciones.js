@@ -72,6 +72,96 @@ arreglo.findIndex(function (valorDelArreglo, indice, arreglo) {
    return 2;
 });
 
+function restar(a, b){
+    return a - b;
+}
+
+console.log(restar(4,2)); // Ejecucion undefined
+console.log(typeof restar); // Tipo function
+console.log(restar); // Definicion de funcion
+
+// Anonymus function
+var ejemplo = function () { // funcion anonima
+
+}
+//nombreDos();
+
+var adrian = {
+    trabajo: function () {
+
+    }
+};
+adrian.trabajo();
+
+var arreglo = [
+    function () {
+
+    }
+];
+arreglo[0]();
+
+saludar("Maria", function (nombre) {
+   return nombre + 'Eg';
+});
+
+// tipos de variables
+var variable; // Nunca mas
+let variableDos = 2; // Si
+variableDos = 3;
+
+const edad = 29; // Siempre que puedan
+// edad = 30;
+
+const vicente = {
+    nombre: 'Vicente'
+};
+vicente.nombre = 'Adrian';
+
+
+const arregloUnoDos = [1, 2];
+
+arregloUnoDos[0] = 3;
+
+const nombre = 'Adrian';
+// nombre = 'Vicente';
+
+const casado = true;
+// casado = false;
+
+const hijos = null;
+// hijos = 3;
+
+const ganarDinero = function () {}
+// ganarDinero = function () {}
+
+
+// vicente = {
+//   algo: 'mas'
+// };
+
+// arregloUnoDos = [1,2,3,4,5];
+
+vicente.isPrototypeOf();
+
+arregloUnoDos.push(5);
+
+nombre.toUpperCase();
+
+// Nunca vamos a usar funciones anonimas
+// FAT ARROW FUNCTION
+const elevarAlCuadrado = function (numero) {
+  return numero * numero;
+};
+
+const  elevarAlCuadradoV2 = (numero) => numero * numero;
+
+const elevarALCuadradoV3 = numero => numero * numero;
+
+const restarDosNumeros = (numUno,numDos) => numUno - numDos;
+
+
+
+
 
 
 
