@@ -116,7 +116,7 @@ appendFilePromesa(file, new_content)
     catch(error1 => {
         return nuevaPromesaEscritura(file, new_content);
     }).then((contenido2) => {
-        console.log(contenido2)
+        console.log("Resultado: ", contenido2)
     });
 
 
