@@ -1,0 +1,20 @@
+{
+  "name": "primer-proyecto",
+  "version": "1.0.0",
+  "description": "JS course",
+  "main": "app.js",
+  "dependencies": {
+    "chalk-pipe": "^2.0.0",
+    "easy-table": "^1.1.1",
+    "inquirer": "^6.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "ROBERTO PRADO",
+  "license": "ISC"
+}

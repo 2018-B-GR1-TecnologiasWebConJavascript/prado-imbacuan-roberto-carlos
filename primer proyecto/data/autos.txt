@@ -1,0 +1,4 @@
+Toyota,qa,2005,rojo,20000,Bueno,215
+Chevrolet,qa,2010,azul,10000,Excelente,118
+Chevrolet,sasd,2010,Dorado,30000,Excelente,930
+Toyota,asdasd,2018,azul,50000,Excelente,318

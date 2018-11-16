@@ -1,0 +1,96 @@
+[
+  [
+    {
+      "type": "list",
+      "name": "brand",
+      "message": "Ingrese la marca: ",
+      "choices": [
+        "Nissan",
+        "Toyota",
+        "Chevrolet",
+        "Hyundai",
+        "Ford"
+      ]
+    },
+    {
+      "type": "input",
+      "name": "model",
+      "message": "Ingrese el modelo: "
+    },
+    {
+      "type": "list",
+      "name": "year",
+      "message": "Ingrese el año: ",
+      "choices": [
+        "1990",
+        "2000",
+        "2005",
+        "2010",
+        "2015",
+        "2018"
+      ]
+    },
+    {
+      "type": "list",
+      "name": "color",
+      "message": "Ingrese el color: ",
+      "choices": [
+        "blanco",
+        "gris",
+        "negro",
+        "rojo",
+        "azul",
+        "verde"
+      ]
+    },
+    {
+      "type": "input",
+      "name": "price",
+      "message": "Ingrese el precio: "
+    },
+    {
+      "type": "list",
+      "name": "status",
+      "message": "Ingrese el estado: ",
+      "choices": [
+        "Malo",
+        "Bueno",
+        "Excelente"
+      ]
+    }
+  ],
+  [
+    {
+      "type": "input",
+      "name": "id",
+      "message": "Ingrese el ID del automóvil: "
+    }
+  ],
+  [
+    {
+      "type": "list",
+      "name": "key",
+      "message": "Ingrese el campo a actualizar: ",
+      "choices": [
+        "Marca",
+        "Modelo",
+        "Año",
+        "Color",
+        "Precio",
+        "Estado"
+      ]
+    },
+    {
+      "type": "input",
+      "name": "value",
+      "message": "Ingrese el nuevo valor: "
+    }
+  ],
+  [
+    {
+      "type": "confirm",
+      "name": "delete",
+      "message": "¿Quiere eliminar este dato?"
+    }
+  ]
+]
