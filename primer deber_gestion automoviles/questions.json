@@ -72,12 +72,12 @@
       "name": "key",
       "message": "Ingrese el campo a actualizar: ",
       "choices": [
-        "Marca",
-        "Modelo",
-        "Año",
-        "Color",
-        "Precio",
-        "Estado"
+        "brand",
+        "model",
+        "year",
+        "color",
+        "price",
+        "status"
       ]
     },
     {
@@ -89,7 +89,7 @@
   [
     {
       "type": "confirm",
-      "name": "delete",
+      "name": "value",
       "message": "¿Quiere eliminar este dato?"
     }
   ]
