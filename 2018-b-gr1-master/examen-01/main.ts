@@ -190,7 +190,12 @@ examen$
             console.log(arregloRespuesta);
             return data;
         })
-    )
+    ),
+    map((data: Respuesta) => {
+        data.bdd.map((value) => {
+        })
+        return data;
+    })
     .subscribe((data: Respuesta) => {
     console.log(data.bdd.length);
 });
