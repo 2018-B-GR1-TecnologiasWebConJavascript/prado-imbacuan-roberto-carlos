@@ -1,0 +1,21 @@
+
+<h3>Gestión de Usuarios</h3>
+<p>Gestione sus usuarios</p>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Nombre</th>
+
+  </tr>
+  <tr *ngFor="let usuario of usuarios">
+    <td>
+      {{usuario.id}}
+    </td>
+    <td>
+      {{usuario.nombre}}
+    </td>
+    <td>
+      <button (click)="hola(usuario)">Eliminar</button>
+    </td>
+  </tr>
+</table>

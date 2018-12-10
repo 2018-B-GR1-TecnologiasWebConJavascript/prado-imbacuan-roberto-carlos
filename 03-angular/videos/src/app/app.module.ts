@@ -3,10 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { InicioComponent } from './rutas/inicio/inicio.component';
+import { PerfilComponent } from './rutas/perfil/perfil.component';
+import { Ruta404Component } from './rutas/ruta404/ruta404.component';
+import { MenuComponent } from './rutas/menu/menu.component';
+import { LoginComponent } from './rutas/login/login.component';
+import { GestionUsuariosComponent } from './rutas/gestion-usuarios/gestion-usuarios.component';
+import { GestionProductosComponent } from './rutas/gestion-productos/gestion-productos.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InicioComponent,
+    PerfilComponent,
+    Ruta404Component,
+    MenuComponent,
+    LoginComponent,
+    GestionUsuariosComponent,
+    GestionProductosComponent
   ],
   imports: [
     BrowserModule,

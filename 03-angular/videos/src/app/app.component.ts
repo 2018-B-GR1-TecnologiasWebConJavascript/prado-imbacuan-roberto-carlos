@@ -11,8 +11,8 @@ function DecoradorMetodo() {
 })
 export class AppComponent {
   title = 'videos';
-  @DecoradorMetodo()
-  metodo() {
-
+  // @DecoradorMetodo()
+  metodo():number {
+	return 0;
   }
 }
