@@ -3,8 +3,18 @@
   <li><a routerLink="/inicio">Inicio</a></li>
   <li><a routerLink="/menu">Menu</a>
     <ol>
-        <li><a routerLink="/menu/gestion-usuarios">Gestión de Usuarios</a></li>
-        <li><a routerLink="/menu/gestion-productos">Gestión de Productos</a></li>
+        <li><a routerLink="/menu/gestion-usuarios">Gestión de Usuarios</a>
+          <ol>
+            <li><a routerLink="/menu/gestion-usuarios/crear-usuario">Crear usuario</a>
+            <li><a routerLink="/menu/gestion-usuarios/actualizar-usuario">Actualizar usuario</a>
+          </ol>
+        </li>
+        <li><a routerLink="/menu/gestion-productos">Gestión de Productos</a>
+          <ol>
+            <li><a routerLink="/menu/gestion-productos/crear-producto">Crear producto</a>
+            <li><a routerLink="/menu/gestion-productos/actualizar-producto">Actualizar prodcuto</a>
+          </ol>
+        </li>
     </ol>
   </li>
   <li><a routerLink="/perfil">Perfil</a></li>

@@ -7,6 +7,12 @@ import { MenuComponent } from './rutas/menu/menu.component';
 import { LoginComponent } from './rutas/login/login.component';
 import {GestionUsuariosComponent} from './rutas/gestion-usuarios/gestion-usuarios.component';
 import {GestionProductosComponent} from './rutas/gestion-productos/gestion-productos.component';
+import {GestionProductosComponent} from './rutas/gestion-productos/gestion-productos.component';
+import {CrearUsuarioComponent} from './rutas/crear-usuario/crear-usuario.component';
+import {CrearProductoComponent} from './rutas/crear-producto/crear-producto.component';
+import {ActualizarUsuarioComponent} from './rutas/actualizar-usuario/actualizar-usuario.component';
+import {ActualizarProductoComponent} from './rutas/actualizar-producto/actualizar-producto.component';
+
 const routes: Routes = [
   { path: '', redirectTo: 'inicio', pathMatch: 'full'},
   { path: 'inicio', component: InicioComponent},
@@ -16,8 +22,22 @@ const routes: Routes = [
   { path: 'menu', component: MenuComponent,
     children: [
       { path: '', redirectTo: 'gestion-productos', pathMatch: 'full'},
-      {path: 'gestion-usuarios', component: GestionUsuariosComponent},
-      {path: 'gestion-productos', component: GestionProductosComponent},
+      {
+        path: 'gestion-usuarios',
+        component: GestionUsuariosComponent,
+        children: [
+          { path: 'crear-usuario', component: CrearUsuarioComponent},
+          { path: 'actualizar-usuario', component: ActualizarUsuarioComponent},
+        ]
+      },
+      {
+        path: 'gestion-productos',
+        component: GestionProductosComponent,
+        children: [
+          { path: 'crear-producto', component: CrearProductoComponent},
+          { path: 'actualizar-producto', component: ActualizarProductoComponent},
+        ]
+      },
     ]
   },
   { path: '**', redirectTo: 'no-encontrado', pathMatch: 'full'},
