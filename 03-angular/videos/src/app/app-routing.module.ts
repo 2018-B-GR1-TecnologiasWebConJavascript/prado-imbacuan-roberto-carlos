@@ -7,7 +7,6 @@ import { MenuComponent } from './rutas/menu/menu.component';
 import { LoginComponent } from './rutas/login/login.component';
 import {GestionUsuariosComponent} from './rutas/gestion-usuarios/gestion-usuarios.component';
 import {GestionProductosComponent} from './rutas/gestion-productos/gestion-productos.component';
-import {GestionProductosComponent} from './rutas/gestion-productos/gestion-productos.component';
 import {CrearUsuarioComponent} from './rutas/crear-usuario/crear-usuario.component';
 import {CrearProductoComponent} from './rutas/crear-producto/crear-producto.component';
 import {ActualizarUsuarioComponent} from './rutas/actualizar-usuario/actualizar-usuario.component';
