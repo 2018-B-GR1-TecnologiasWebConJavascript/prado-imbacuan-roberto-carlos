@@ -1,20 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import {UsuarioServiceService} from "../../servicios/usuario-service.service";
-@Component({
-  selector: 'app-gestion-usuarios',
-  templateUrl: './gestion-usuarios.component.html',
-  styleUrls: ['./gestion-usuarios.component.scss']
-})
-export class GestionUsuariosComponent implements OnInit {
-  usuarios: Usuario[] = [];
-  constructor(private readonly usuarioService: UsuarioServiceService) { }
+import { Injectable } from '@angular/core';
 
-  ngOnInit() {
-    this.usuarios = this.usuarioService.usuarios;
-  }
-  eliminar(usuario: Usuario) {
+@Injectable({
+  providedIn: 'root'
+})
+export class UsuarioServiceService {
+  usuarios: Usuario[] = [
+    {id: 1, nombre: 'Adrian'},
+    {id: 2, nombre: 'Vicente'},
+  ];
+  constructor() { }
+  eloiminar(usuario: Usuario) {
     console.log(usuario);
-    this.usuarioService.eloiminar(usuario);
     const index = this.usuarios.findIndex((user) => {
       return user.id === usuario.id;
     });
@@ -33,9 +29,13 @@ export class GestionUsuariosComponent implements OnInit {
     });
     this.usuarios[indiceUsuario] = usuarioAxtualizado;
   }
+  buscar(id: number) {
+    return this.usuarios.find((usuario) => {
+      usuario.id == id
+    })
+  }
 }
-
-interface Usuario {
+export interface UsuarioInterface {
   nombre?: string;
   id?: number;
 }

@@ -14,6 +14,8 @@ import { CrearUsuarioComponent } from './rutas/crear-usuario/crear-usuario.compo
 import { CrearProductoComponent } from './rutas/crear-producto/crear-producto.component';
 import { ActualizarUsuarioComponent } from './rutas/actualizar-usuario/actualizar-usuario.component';
 import { ActualizarProductoComponent } from './rutas/actualizar-producto/actualizar-producto.component';
+import {UsuarioServiceService} from "./servicios/usuario-service.service";
+import { VerDetalleUsuarioComponent } from './rutas/ver-detalle-usuario/ver-detalle-usuario.component';
 
 @NgModule({
   declarations: [
@@ -29,12 +31,15 @@ import { ActualizarProductoComponent } from './rutas/actualizar-producto/actuali
     CrearProductoComponent,
     ActualizarUsuarioComponent,
     ActualizarProductoComponent,
+    VerDetalleUsuarioComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    UsuarioServiceService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
